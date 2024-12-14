@@ -5,7 +5,7 @@ sleep 3
 
 sudo pacman -S --noconfirm neofetch xorg xorg-xinit sddm sddm-kcm mesa
 sudo systemctl enable sddm
-sudo pacman -S --noconfirm i3-wm i3 i3status dmenu polybar 
+sudo pacman -S --noconfirm i3-wm i3 i3status dmenu polybar mpv krita xorg
 sudo localectl set-locale ru_RU.UTF-8
 sudo localectl set-x11-keymap --no-convert us,ru pc105 "" grp:alt_shift_toggle
 sudo pacman -S --noconfirm doas bsd-games kitty polybar
@@ -28,13 +28,13 @@ modprobe vboxdrv
 
 
 echo "FONT=cyr-sun16" >> /etc/vconsole.conf
-sleep 5
-
+yay -S simplescreenrecorder-git
 cat ./pig
 
 echo "installation complete"
 sleep 2
 echo "now reboot pc"
+reboot
 # - зачем нужно ставить PigOS?
 # - там есть интернет. 
 
