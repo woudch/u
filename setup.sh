@@ -9,14 +9,14 @@ sudo systemctl enable sddm
 sudo pacman -S --noconfirm i3-wm i3 i3status dmenu polybar 
 sudo localectl set-locale ru_RU.UTF-8
 sudo localectl set-x11-keymap --no-convert us,ru pc105 "" grp:alt_shift_toggle
-sudo pacman -S --noconfirm doas bsd-games kitty 
+sudo pacman -S --noconfirm doas bsd-games kitty polybar
 cd ~/
 git clone https://aur.archlinux.org/packages/yay
 cd ~/yay 
 makepkg -si
 cd ..
 yay -S google-chrome
-cd PigOS
+cd u
 sudo pacman -S --noconfirm virtualbox-host-modules-arch
 sudo pacman -S --noconfirm virtualbox
 sudo pacman -S --noconfirm firefox
@@ -26,7 +26,6 @@ sudo pacman -S --noconfirm zip unzip imagemagick scrot wget curl
 
 modprobe vboxdrv 
 
-# кириллический шрифт для терминала еще в тестинге так что извините если не работает 0_0
 
 echo "FONT=cyr-sun16" >> /etc/vconsole.conf
 sleep 5
