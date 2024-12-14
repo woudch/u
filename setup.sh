@@ -3,7 +3,6 @@ echo "SCRIPT ACTUALLY IN TESTING AND MAYBE IT HAS A LOT OF BUGS"
 echo "YOU NEED SUDO TO USE THIS!"
 sleep 3
 
-YAY -S screenfetch-git
 sudo pacman -S --noconfirm neofetch xorg xorg-xinit sddm sddm-kcm mesa
 sudo systemctl enable sddm
 sudo pacman -S --noconfirm i3-wm i3 i3status dmenu polybar 
@@ -14,6 +13,7 @@ cd ~/
 git clone https://aur.archlinux.org/packages/yay
 cd ~/yay 
 makepkg -si
+yay -S screenfetch-git
 cd ..
 yay -S google-chrome
 cd u
