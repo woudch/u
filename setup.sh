@@ -5,7 +5,7 @@ sleep 3
 
 sudo pacman -S --noconfirm neofetch xorg xorg-xinit sddm sddm-kcm mesa
 sudo systemctl enable sddm
-sudo pacman -S --noconfirm i3-wm i3 i3status dmenu polybar mpv krita xorg
+sudo pacman -S --noconfirm i3-wm i3 i3status dmenu polybar mpv krita xorg lxappearance
 sudo localectl set-locale ru_RU.UTF-8
 sudo localectl set-x11-keymap --no-convert us,ru pc105 "" grp:alt_shift_toggle
 sudo pacman -S --noconfirm doas bsd-games kitty polybar
@@ -24,6 +24,8 @@ sudo pacman -S --noconfirm jdk-openjdk
 sudo pacman -S --noconfirm obs-studio ncdu vim gimp mplayer mpg123
 sudo pacman -S --noconfirm zip unzip imagemagick scrot wget curl
 
+yay -S mint-y-theme
+yay -S mint-y-icons
 modprobe vboxdrv 
 
 
